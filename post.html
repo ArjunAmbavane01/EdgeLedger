@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/utility.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <title>Post One</title>
+</head>
+
+<body id="home">
+    <header class="hero blog">
+        <div class="navbar top" id="navbar">
+            <h1 class="logo">
+                <a href="#home" class="text-primary"><span class="text-primary"> <i class="fas fa-landmark"></i> Edge</span>Ledger<sup>TM</sup></a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>Harvey Specter</strong> | April 19 2020
+            </p>
+            <img src="/original/image_resources/blog/blog2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit blanditiis labore incidunt, quibusdam sapiente non tenetur vitae similique provident quisquam sequi consequuntur nostrum fuga odit voluptas nesciunt velit dolor illo?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat, veritatis molestias nostrum fugiat nesciunt tenetur unde eveniet error eum ipsum ipsa id hic possimus inventore enim dolores laudantium vel, illo rem. Corporis nihil, eligendi
+                velit dolore quibusdam illum magni fugiat reprehenderit ea delectus impedit nemo rerum natus omnis aliquam porro quam inventore laboriosam vel harum culpa praesentium libero dolorum. A!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam voluptas neque ab harum rem nemo praesentium nisi quia inventore cumque earum esse possimus fugit, quasi modi, amet libero laboriosam alias fuga ea, sapiente accusantium
+                a. Inventore, voluptate adipisci! Laboriosam magni mollitia voluptatem a aliquam, debitis maxime provident deserunt repudiandae?</p>
+        </section>
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 | EdgeLedger</p>
+    </footer>
+
+    <script>
+        // Smooth Scrolling
+        $('#navbar a,.btn').on('click', function(event) {
+            if (this.hash !== '') {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                        scrollTop: $(hash).offset().top - 71,
+                    },
+                    800
+                );
+            }
+        });
+    </script>
+</body>
+
+</html>
